@@ -1,5 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);
-
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
 /**{*/
 /*    border:dotted #666 1px;*/
 /*}*/
@@ -8,17 +7,19 @@ body{
     background-color:white;
     color:#333;
     font-family: 'Lato', sans-serif;
+    margin:0;
 
 }
 
 a{
-    color:#143f65;
+    color:#333;
     text-decoration: none;
     transition: all ease 0.2s;
 }
 
 a:hover,
-.entry-meta a:hover{
+.entry-meta a:hover,
+.entryTitle a:hover{
     color:#1d5d95;
 }
 
@@ -37,7 +38,6 @@ nav {
     font-size:80%;
     /*color: white;*/
     color:#333;
-    
     box-shadow: 0px 2px 5px 0px #999;
     z-index: 5;
 }
@@ -79,6 +79,15 @@ nav ul li {
   transition: all ease 0.2s;
 }
 
+#donate{
+    background-color:#a3151a;
+    color:white;
+    transition: all ease 0.2s;
+}
+
+#donate:hover{
+    background-color:#e5343a;
+}
 nav ul li:hover {
   background: #143f65;
   color: white;
@@ -137,51 +146,47 @@ nav ul li:hover ul {
 	filter: opacity(30%);
 }
 
-/*#heroText{*/
-/*    position:absolute;*/
-/*	margin-top:50%;*/
-/*	bottom:0;*/
-/*    margin: 0 auto;*/
-/*    height:50%;*/
-/*    width:100%;*/
-    
-/*    color:white;*/
-/*    text-align: center;*/
-/*    text-transform: uppercase;*/
-/*    background: url(../img/logo1.png) no-repeat top center fixed;*/
-/*    z-index:3;*/
-/*}*/
-/*#heroText h1{*/
-/*    margin: 0;*/
-/*    font-size: 3em;*/
-/*}*/
 
 #logo{
     position:absolute;
-    top:30%;
+    top:20%;
 	bottom:0;
     margin: 0 auto;
-    height:100%;
-    width:99%;
-
+    height:80%;
+    width: 99%;
     background: url(../img/logo1.png) no-repeat top center;
+    background-size: 90%;
+    overflow:hidden;
     z-index:3;
 }
 
+#tagline {
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    text-align: center;
+    font-size: 25px;
+    color: #a3151a;
+}
+
+
 /*content
 *********************/
-.container{
+#container{
     position: relative;
     padding-top:50px;
+    top:50px;
     width:95%;
     height:100%;
     margin: 0 auto;
     margin-top:100vh;
+    margin-bottom: 100px;
+    overflow:hidden;
 
  
 }
 
-.main{
+#main{
     float:left;
     width:65%;
 }
@@ -196,8 +201,10 @@ span.cat-link{
     font-size:90%;
 }
 
-.entryTitle{
+.entryTitle,
+.entryTitle a{
     font-weight:300;
+    transition: all ease 0.2s;
 }
 
 h1.entryTitle{
@@ -219,11 +226,12 @@ time{
 
 img{
     max-width:90%;
+    overflow:hidden;
 }
 
 /**right
 ************/
-.right{
+#right{
     float:right;
     width:30%;
     color: #666;
@@ -231,7 +239,7 @@ img{
 
 aside{
     border-top:solid #333 5px;
-     font-size: 90%;
+    font-size: 90%;
 }
 
 .missionTitle{
@@ -242,9 +250,45 @@ aside{
 
 .missionText{
     line-height:24px;
+    padding-bottom:25px;
+}
+
+.button{
+    display:block;
+    text-align:center;
+    background-color:#143f65;
+    color:white;
+    position: relative;
+    padding: 15px;
+    margin: 0 auto;
+    max-width:150px;
+}
+
+.button:hover{
+    background-color:#1d5d95;
+    color:white;
+}
+
+/***********************/
+#go{
+    color:#143f65;
+    border:solid 2px #143f65;
+    background-color:transparent;
+    margin-top:5%;
+ 
+}
+
+#go:hover{
+    border-color:#1d5d95;
+    color:#1d5d95;
 }
 
 footer{
-    height: 100px;
+  
     clear:both;
+    color:white;
+    display:block;
+    width:100%;
+    margin-top:10%;
+    /*background-color:#143f65;*/
 }
