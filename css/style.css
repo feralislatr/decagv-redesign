@@ -23,12 +23,58 @@ a:hover,
     color:#1d5d95;
 }
 
+/*
+social media bar & nav scrolling
+**********************************/
+#social{
+    height:50px;
+    width:100%;
+    background-color: white;
+    top:0;
+    left:0;
+    position:absolute;
+}
+
+#social:first-child{
+    margin-left:2%;
+}
+
+#social img{
+    max-height: 40px;
+    padding-top: 5px;
+    transition: all ease 0.2s;
+}
+
+
+#social img:hover{
+  filter:opacity(70%);
+  -webkit-filter:opacity(70%);
+}
+
+nav.clone {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-100%);
+    transition: 0.2s transform cubic-bezier(.3,.73,.3,.74);
+}
+
+.down nav.clone {
+    transform: translateY(0);
+}
+
+/**********************************/
+
+
 /** nav
 *****************************/
 nav {
-    top:0;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    top:50px;
     left:0;
-    position: fixed;
+    position: absolute;
     float:right;
     width:100%;
     height:50px;
@@ -41,6 +87,8 @@ nav {
     box-shadow: 0px 2px 5px 0px #999;
     z-index: 5;
 }
+
+    
 #search{
     height:50px;
     width:50px;
@@ -141,7 +189,7 @@ nav ul li:hover ul {
     position:absolute;
 	left:0;
 	right:0;
-	top:0;
+	top:50px;
 	bottom:0;
 	filter: opacity(30%);
 	-webkit-filter: opacity(30%);
