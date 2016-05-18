@@ -33,15 +33,17 @@ social media bar & nav scrolling
     top:0;
     left:0;
     position:absolute;
+    
 }
 
 #social:first-child{
-    margin-left:2%;
+    
 }
 
 #social img{
     max-height: 40px;
     padding-top: 5px;
+    float:right;
     transition: all ease 0.2s;
 }
 
@@ -84,7 +86,7 @@ nav {
     font-size:80%;
     /*color: white;*/
     color:#333;
-    box-shadow: 0px 2px 5px 0px #999;
+    box-shadow: 0px 2px 3px 0px #999;
     z-index: 5;
 }
 
