@@ -36,8 +36,8 @@ social media bar & nav scrolling
     
 }
 
-#social:first-child{
-    
+#social{
+    overflow:hidden;
 }
 
 #social img{
